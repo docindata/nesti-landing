@@ -13,29 +13,51 @@
   <body>
     <a class="skip-link" href="#main">Hoppa till innehåll</a>
 
+    <header class="site-header" aria-label="Sidhuvud">
+      <div class="container">
+        <div class="topline">
+          <nav class="nav" aria-label="Sektioner">
+            <a class="nav-link nav-link--cta" href="#waitlist">Väntelista</a>
+            <a class="nav-link" href="#vision-title">Vår vision</a>
+            <a class="nav-link" href="#why-title">Varför Nesti</a>
+          </nav>
+        </div>
+      </div>
+    </header>
 
     <main id="main">
       <section class="section section--hero" aria-labelledby="hero-title">
         <div class="container">
           <div class="hero">
-            <div class="hero-copy" aria-describedby="hero-subtitle">
+            <div class="hero-card" aria-describedby="hero-subtitle">
+              <div class="hero-kicker">
+                <span class="kicker-pill">Second-hand för barns saker</span>
+              </div>
               <h1 id="hero-title">Nesti</h1>
-              <p id="hero-subtitle" class="lead">Sveriges första specialiserade second-hand-plattform för barns utveckling och behov</p>
+              <p id="hero-subtitle" class="lead">
+                Sveriges första specialiserade second-hand-plattform för barns utveckling och behov
+              </p>
 
-              <div class="waitlist-card waitlist-card--embed" aria-label="Väntelista">
-                <div class="waitlist-pill" aria-hidden="true">Väntelista</div>
-                <p class="waitlist-note">Vi återkommer till dig när vi har lanserat vår app.</p>
-                <div class="tally-embed waitlist-embed">
+              <div class="hero-highlights" aria-label="Snabba fördelar">
+                <div class="highlight"><span aria-hidden="true">✓</span> Tryggt</div>
+                <div class="highlight"><span aria-hidden="true">✓</span> Smidigt</div>
+                <div class="highlight"><span aria-hidden="true">✓</span> Hållbart</div>
+              </div>
+            </div>
+
+            <div class="waitlist-card waitlist-card--embed" id="waitlist" aria-label="Väntelista">
+              <div class="waitlist-pill" aria-hidden="true">✦ Väntelista</div>
+              <p class="waitlist-note">Vi återkommer till dig när vi har lanserat vår app.</p>
+              <div class="tally-embed waitlist-embed">
                   <iframe
-                    data-tally-src="https://tally.so/embed/9qX80Q?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-                    loading="lazy"
-                    width="100%"
-                    frameborder="0"
-                    marginheight="0"
-                    marginwidth="0"
-                    title="Väntelista"
-                  ></iframe>
-                </div>
+                  data-tally-src="https://tally.so/embed/9qX80Q?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1"
+                  loading="lazy"
+                  width="100%"
+                  frameborder="0"
+                  marginheight="0"
+                  marginwidth="0"
+                  title="Väntelista"
+                ></iframe>
               </div>
             </div>
           </div>
@@ -63,15 +85,20 @@
             </div>
             <div class="why-grid" aria-label="Varför Nesti">
               <div class="mini-card">
-                <p>Anpassad efter föräldrars behov och barns utvecklingsstadier</p>
+                <div class="card-icon" aria-hidden="true">🧸</div>
+                <h3>Rätt i rätt tid</h3>
+                <p class="muted">Anpassad efter föräldrars behov och barns utvecklingsstadier.</p>
               </div>
               <div class="mini-card">
-                <p>Högaktuella rekommendationer baserade på barnets ålder</p>
+                <div class="card-icon" aria-hidden="true">⭐</div>
+                <h3>Smarta rekommendationer</h3>
+                <p class="muted">Högaktuella tips baserade på barnets ålder.</p>
               </div>
               <div class="mini-card">
-                <p>
-                  Enkelhet att lägga upp annonser trots hög rullians på barns artiklar – spara tid när behov och
-                  storlekar förändras
+                <div class="card-icon" aria-hidden="true">⏱️</div>
+                <h3>Snabbt att sälja vidare</h3>
+                <p class="muted">
+                  Enkelt att lägga upp annonser trots hög rullians – spara tid när behov och storlekar förändras.
                 </p>
               </div>
             </div>
